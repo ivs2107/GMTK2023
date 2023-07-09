@@ -13,7 +13,7 @@ public class Shot4Directions : MonoBehaviour
     void Start()
     {
         body = GetComponent<Rigidbody>();
-        baseSecondsPerShot = 1f;
+        baseSecondsPerShot = 0.4f;
         currentSecondsPerShot = baseSecondsPerShot;
         force = 500;
     }

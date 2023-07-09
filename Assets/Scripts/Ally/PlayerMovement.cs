@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         body = GetComponent<Rigidbody>();
-        speed = 10;
+        speed = 5;
     }
 
     // Update is called once per frame
