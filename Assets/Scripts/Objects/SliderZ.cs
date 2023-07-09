@@ -19,6 +19,13 @@ public class SliderZ : MonoBehaviour
             startPosition = transform.position;
         }
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag != "ProtectBlock")
+        {
+            isDragging = false;
+        }
+    }
 
     private void OnMouseUp()
     {

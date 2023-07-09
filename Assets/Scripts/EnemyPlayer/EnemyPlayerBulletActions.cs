@@ -20,15 +20,9 @@ public class EnemyPlayerBulletActions : MonoBehaviour
         StartCoroutine(WaitTillDie());
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag != "enemyPlayer")
+        if (other.tag != "enemyPlayer" && other.tag != "ProtectBlock")
         {
             
             if (other.tag == "DumbAlly")
@@ -76,9 +70,10 @@ public class EnemyPlayerBulletActions : MonoBehaviour
 
                     }
                     
-                    Destroy(this.gameObject);
+                  
                 }
             }
+            Destroy(this.gameObject);
         }
     }
     IEnumerator WaitTillDie()
