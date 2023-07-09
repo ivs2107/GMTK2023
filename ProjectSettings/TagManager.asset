@@ -8,6 +8,7 @@ TagManager:
   - DumbAlly
   - ProtectBlock
   - WallBlock
+  - end
   layers:
   - Default
   - TransparentFX

@@ -28,6 +28,11 @@ public class MovableCube : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        isDragging = false;
+    }
+
     private void Update()
     {
         if (isDragging)
@@ -39,9 +44,11 @@ public class MovableCube : MonoBehaviour
             {
                 Vector3 hitPoint = ray.GetPoint(distanceToPlane);
                 hitPoint.y = startPosition.y;
-
                 transform.position = hitPoint;
+
             }
         }
     }
+
+
 }

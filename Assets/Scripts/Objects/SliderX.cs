@@ -28,6 +28,11 @@ public class SliderX : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        isDragging = false;
+    }
+
     private void Update()
     {
         if (isDragging)
