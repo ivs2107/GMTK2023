@@ -9,6 +9,7 @@ TagManager:
   - ProtectBlock
   - WallBlock
   - end
+  - Arrow
   layers:
   - Default
   - TransparentFX

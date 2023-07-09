@@ -42,6 +42,6 @@ EditorBuildSettings:
     path: Assets/Scenes/GMTK_Level_10.unity
     guid: 031db99c148f09d469ac4afeff8bedad
   - enabled: 1
-    path: Assets/Scenes/TestScene.unity
+    path: Assets/Scenes/End.unity
     guid: 99f47a17c757c124fa00f0ab6e7e195f
   m_configObjects: {}

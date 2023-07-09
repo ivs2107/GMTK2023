@@ -30,7 +30,10 @@ public class SliderX : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        isDragging = false;
+        if (other.gameObject.tag != "ProtectBlock")
+        {
+            isDragging = false;
+        }
     }
 
     private void Update()

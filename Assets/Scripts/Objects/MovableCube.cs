@@ -30,7 +30,13 @@ public class MovableCube : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        isDragging = false;
+        if (gameObject.tag != "Arrow")
+        {
+            if (other.gameObject.tag != "ProtectBlock")
+            {
+                isDragging = false;
+            }
+        }
     }
 
     private void Update()
